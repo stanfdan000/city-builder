@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/reset.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/home.css" />
+        <title>Alchemy City Builder</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="gutter-right logo">
+                <img src="./assets/big-logo.png" />
+            </div>
+        </header>
+        <main>
+            <h1>Alchemy City Builder</h1>
+            <section class="details">
+                <div class="select" id="climate">
+                    <select id="climate-select">
+                        <option value="1">Temperate</option>
+                        <option value="2">Polar</option>
+                        <option value="3">Desert</option>
+                        <option value="4">Tropical</option>
+                    </select>
+                    <img id="climate-img" src="./assets/climate-1.jpeg" />
+                </div>
+                <div class="select" id="architecture">
+                    <select id="architecture-select">
+                        <option value="1">Modern</option>
+                        <option value="2">Gothic</option>
+                        <option value="3">Art Deco</option>
+                        <option value="4">Beaux-Arts</option>
+                    </select>
+                    <img id="architecture-img" src="./assets/architecture-1.jpeg" />
+                </div>
+            </section>
+            <section class="slogan">
+                <h3>City Slogans</h3>
+                <input id="slogan-input" type="text" />
+                <button id="slogan-btn">Add</button>
+                <div id="slogan-list"></div>
+            </section>
+        </main>
+        <footer>
+            <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+        </footer>
+
+        <script type="module" src="./app.js"></script>
+    </body>
+</html>
